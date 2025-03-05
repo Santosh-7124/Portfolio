@@ -6,9 +6,9 @@ function Experiences() {
     <div className="experiences">
       <img className="experiences-background" src={DesktopBackground} />
       <p>
-        UX Designer with over a year of experience turning user problems into
-        intuitive solutions, crafting seamless experiences for multiple clients
-        across diverse industries.
+        UX Designer with over a year of experience turning user problems
+         <br />into intuitive solutions, crafting seamless experiences <br /> for
+        multiple clients across diverse industries.
       </p>
     </div>
   );

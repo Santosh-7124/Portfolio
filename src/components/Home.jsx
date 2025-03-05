@@ -3,6 +3,7 @@ import Banner from "./Home/Banner";
 import Marquee from "./Home/Marquee";
 import Experiences from "./Home/Experiences";
 import Projects from "./Home/Projects";
+import Glimpse from "./Home/Glimpse";
 
 function Home() {
   return (
@@ -11,6 +12,7 @@ function Home() {
       <Marquee />
       <Experiences />
       <Projects />
+      <Glimpse />
     </>
   );
 }
