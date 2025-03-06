@@ -254,6 +254,10 @@ header nav {
   text-align: left;
 }
 
+.project-banner .home-banner-container-main section h1 span {
+  width: 310px;
+}
+
 @keyframes fadeInOut {
   0% {
     opacity: 0;
