@@ -10,11 +10,15 @@ function Navbar() {
           <sub>UX Designer</sub>
         </Link>
         <nav>
-          <Link to="/projects" className="primary-button">Projects</Link>
+          <Link to="/projects" className="primary-button">
+            Projects
+          </Link>
           <a href="#" className="primary-button">
             Resume
           </a>
-          <Link className="secondary-button">Contact</Link>
+          <Link to="/contact" className="secondary-button">
+            Contact
+          </Link>
         </nav>
       </section>
     </header>

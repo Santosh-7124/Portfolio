@@ -677,6 +677,136 @@ header nav {
   filter: grayscale(0%);
 }
 
+/* Contact */
+
+form {
+  display: flex;
+  width: 100%;
+  padding: 80px 400px;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 48px;
+}
+
+form section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 36px;
+  align-self: stretch;
+}
+
+.name-input-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  align-self: stretch;
+}
+
+.input-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  align-self: stretch;
+}
+
+form label {
+  color: #fff;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.64px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  display: flex;
+  height: 48px;
+  padding: 10px 16px;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+  border-radius: 8px;
+  border: 1px solid #2c2c2c;
+  background: rgba(49, 49, 49, 0.2);
+  color: #ccc;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.64px;
+}
+
+form textarea {
+  width: 100%;
+  height: 200px;
+  resize: none;
+}
+
+form button {
+  width: 100%;
+  display: flex;
+  height: 52px;
+  padding: 8px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+  border: none;
+  border-radius: 8px;
+  background: #fff;
+  color: #121212;
+  text-align: center;
+  font-family: Raleway;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: -0.72px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+form button:hover {
+  border: 1px solid #fff;
+  color: #fff;
+  background: transparent;
+}
+
+.react-tel-input {
+  width: 100%;
+}
+
+.input-container .react-tel-input .form-control {
+  color: #ccc;
+  font-family: Raleway;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.64px;
+}
+
+.contact-marquee .marquee-marquee img {
+  width: 300px;
+  height: auto;
+  object-fit: cover;
+}
+
+.contact-marquee .marquee-marquee{
+  animation: marquee 40s linear infinite;
+}
+
+/* Footer */
+
 footer {
   width: 100%;
   display: flex;
