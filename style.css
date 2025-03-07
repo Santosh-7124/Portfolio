@@ -358,25 +358,25 @@ header nav {
 }
 
 .home-marquee-dark {
-  width: 474px;
+  width: 674px;
   height: 503px;
   flex-shrink: 0;
   border-radius: 503px;
   background: #121212;
-  filter: blur(75px);
+  filter: blur(70px);
   z-index: 1;
 }
 
 .home-marquee-container .left {
   position: absolute;
-  left: -114px;
+  left: -334px;
   top: 50%;
   transform: translateY(-50%);
 }
 
 .home-marquee-container .right {
   position: absolute;
-  right: -114px;
+  right: -334px;
   top: 50%;
   transform: translateY(-50%);
 }
