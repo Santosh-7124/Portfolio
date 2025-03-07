@@ -494,6 +494,11 @@ header nav {
   align-items: center;
   justify-content: center;
   position: relative;
+  transition: all 0.3s;
+}
+
+.projects-set:hover .projects-set-img {
+  scale: 1.1;
 }
 
 .projects-set-img .main-img {
