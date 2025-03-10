@@ -831,11 +831,11 @@ header nav {
 }
 
 .project-overview-container:first-child {
-  width: 60%;
+  width: 70%;
 }
 
 .project-overview-container:last-child {
-  width: 40%;
+  width: 30%;
 }
 
 .project-overview-set {
