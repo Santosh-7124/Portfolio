@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import DesktopBackground from "../../assets/Contact/Banner/Desktop Banner Background.png";
+import OpenToWork from "../OpenToWork";
 
 function Banner() {
   const words = ["Create", "Innovate", "Design", "Elevate"];
@@ -21,10 +22,7 @@ function Banner() {
         alt="Background"
       />
       <div className="home-banner-container">
-        <div className="open-to-work">
-          <span></span>
-          <p>Open To Work</p>
-        </div>
+        <OpenToWork />
         <div className="home-banner-container-main">
           <section>
             <p>Contact</p>

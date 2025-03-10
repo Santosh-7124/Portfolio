@@ -197,9 +197,8 @@ header nav {
   background: linear-gradient(var(--gradient-angle), #0efc01, #4041c700);
   mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
   mask-composite: exclude;
-  animation: rotateGradient 2s linear infinite;
+  animation: rotateGradient 5s linear infinite;
 }
-
 
 .open-to-work-container {
   display: flex;
@@ -832,7 +831,11 @@ header nav {
 }
 
 .project-overview-container:first-child {
-  width: 100%;
+  width: 60%;
+}
+
+.project-overview-container:last-child {
+  width: 40%;
 }
 
 .project-overview-set {
@@ -927,7 +930,7 @@ header nav {
 }
 
 .project-overview-img {
-  width: 435px;
+  width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
@@ -995,8 +998,7 @@ header nav {
 .project-points-container li {
   width: 100%;
   display: flex;
-  padding: 24px;
-  justify-content: center;
+  padding: 32px;
   align-items: flex-start;
   gap: 10px;
   flex: 1 0 0;
