@@ -1,5 +1,6 @@
 import React from "react";
 import DesktopBackground from "../../assets/Home/Glimpse/Desktop Background.png";
+import MobileBackground from "../../assets/Home/Glimpse/Mobile Background.png";
 import CocaCola from "../../assets/Home/Glimpse/CocaCola.jpg";
 import ThumbsUp from "../../assets/Home/Glimpse/ThumbsUp.jpg";
 import Pepsi from "../../assets/Home/Glimpse/Pepsi.jpg";
@@ -14,15 +15,23 @@ function Glimpse() {
   return (
     <div className="glimpse">
       <img
-        className="glimpse-background"
+        className="glimpse-background desktop"
         src={DesktopBackground}
         alt="Background"
       />
+      <img
+        className="glimpse-background mobile"
+        src={MobileBackground}
+        alt="Background"
+      />
       <div className="glimpse-heading">
-        <h2>A Glimpse Through My Lens</h2>
-        <p>
+        <h2>
+          A Glimpse Through <br className="mobile" /> My Lens
+        </h2>
+        <p className="desktop">
           We create stunning, user-centric websites that inspire and engage.
         </p>
+        <p className="mobile">Elevating Brands with Stunning Product Shots</p>
       </div>
       <div className="glimpse-container">
         <section>

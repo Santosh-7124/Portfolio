@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import DesktopBackground from "../../assets/Home/Banner/Desktop Banner Background.png";
+import MobileBackground from "../../assets/Home/Banner/Mobile Banner Background.png";
 import OpenToWork from "../OpenToWork";
 
 function Banner() {
@@ -17,8 +18,13 @@ function Banner() {
   return (
     <div className="home-banner">
       <img
-        className="home-banner-background"
+        className="home-banner-background desktop"
         src={DesktopBackground}
+        alt="Background"
+      />
+      <img
+        className="home-banner-background mobile"
+        src={MobileBackground}
         alt="Background"
       />
       <div className="home-banner-container">
@@ -28,7 +34,7 @@ function Banner() {
             <p>Hi, I’m Abhay!</p>
             <div className="home-banner-scroll-text">
               <h1>
-                I Design Stunning <span>{words[currentWordIndex]}</span>
+                I Design <br className="mobile"/>  Stunning <span>{words[currentWordIndex]}</span>
               </h1>
             </div>
           </section>

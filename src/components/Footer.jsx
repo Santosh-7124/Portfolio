@@ -1,12 +1,18 @@
 import React from "react";
 import DesktopBackground from "../assets/Footer/Desktop Background.png";
+import MobileBackground from "../assets/Footer/Mobile Background.png";
 
 function Footer() {
   return (
     <footer>
       <img
-        className="footer-background"
+        className="footer-background desktop"
         src={DesktopBackground}
+        alt="Background"
+      />
+      <img
+        className="footer-background mobile"
+        src={MobileBackground}
         alt="Background"
       />
       <div className="footer-container">
@@ -71,7 +77,10 @@ function Footer() {
                 />
               </svg>
             </a>
-            <a href="https://www.linkedin.com/in/abhay-nayak-k-187b42198/" target="_blank">
+            <a
+              href="https://www.linkedin.com/in/abhay-nayak-k-187b42198/"
+              target="_blank"
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
