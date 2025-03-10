@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import DesktopBackground from "../../assets/Home/Banner/Desktop Banner Background.png";
+import OpenToWork from "../OpenToWork";
 
 function Banner() {
   const words = ["Websites", "Applications", "Responsive", "Interfaces"];
@@ -8,9 +9,9 @@ function Banner() {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentWordIndex((prevIndex) => (prevIndex + 1) % words.length);
-    }, 3000); 
+    }, 3000);
 
-    return () => clearInterval(interval); 
+    return () => clearInterval(interval);
   }, []);
 
   return (
@@ -21,10 +22,7 @@ function Banner() {
         alt="Background"
       />
       <div className="home-banner-container">
-        <div className="open-to-work">
-          <span></span>
-          <p>Open To Work</p>
-        </div>
+        <OpenToWork />
         <div className="home-banner-container-main">
           <section>
             <p>Hi, I’m Abhay!</p>
