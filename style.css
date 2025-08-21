@@ -32,16 +32,25 @@ header {
 }
 
 .navbar-home {
-  color: #121212;
   font-family: "Sora";
   font-style: normal;
   font-weight: 800;
   font-size: 40px;
   line-height: 52px;
   text-decoration: none;
-  background: none;
-  border: none;
+  background: linear-gradient(to right, #121212 50%, #ea580c 50%);
+  background-size: 200% 100%;
+  background-position: left bottom;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   cursor: pointer;
+  border: none;
+  transition: all 0.3s;
+}
+
+.navbar-home.active-nav-link {
+  background-position: right bottom;
 }
 
 header nav {
@@ -83,7 +92,7 @@ header nav a:hover::after {
   transform-origin: left;
 }
 
-.active-nav-link{
+.active-nav-link {
   color: #ea580c;
 }
 
@@ -116,10 +125,22 @@ header nav a:hover::after {
   box-shadow: 3px 3px #121212;
 }
 
+.navbar-contact.active-nav-link {
+  color: #ea580c;
+  border: 1px solid #ea580c;
+  box-shadow: 3px 3px #ea580c;
+}
+
 .navbar-contact:hover {
   background: #ffffff;
   transform: translate(1px, 1px);
   box-shadow: 2px 2px #121212;
+}
+
+.navbar-contact.active-nav-link:hover {
+  transform: none;
+  box-shadow: 3px 3px #ea580c;
+  cursor: default;
 }
 
 .navbar-contact:active {

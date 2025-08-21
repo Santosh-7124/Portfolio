@@ -3,7 +3,7 @@ import DesktopBackground from "../assets/Hero/Desktop Background.svg";
 import SocialMedia from "./SocialMedia";
 function Home() {
   return (
-    <div className="hero">
+    <section className="hero" id="Home">
       <div className="hero-container">
         <img
           src={DesktopBackground}
@@ -25,7 +25,7 @@ function Home() {
         </div>
         <SocialMedia />
       </div>
-    </div>
+    </section>
   );
 }
 

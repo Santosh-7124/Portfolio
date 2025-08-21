@@ -10,7 +10,9 @@ function Navbar({ activeSection }) {
   return (
     <header>
       <button
-        className="navbar-home"
+        className={`navbar-home ${
+          activeSection === "Home" ? "active-nav-link" : ""
+        }`}
         onClick={(e) => {
           e.preventDefault();
           window.scrollTo({ top: 0, behavior: "smooth" });
@@ -51,7 +53,13 @@ function Navbar({ activeSection }) {
         </a>
       </nav>
 
-      <a href="#Contact" className="navbar-contact" onClick={handleButtonClick}>
+      <a
+        href="#Contact"
+        className={`navbar-contact ${
+          activeSection === "Contact" ? "active-nav-link" : ""
+        }`}
+        onClick={activeSection === "Contact" ? undefined : handleButtonClick}
+      >
         Contact Me
       </a>
     </header>
