@@ -114,7 +114,9 @@ header nav a:hover::after {
   align-items: center;
   border-radius: 4px;
   border: 1px solid #121212;
-  background: #ffffff;
+  background: linear-gradient(to left, #ffffff 50%, #ea580c 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
   color: #121212;
   font-family: "Sora";
   font-size: 20px;
@@ -126,20 +128,19 @@ header nav a:hover::after {
 }
 
 .navbar-contact.active-nav-link {
-  color: #ea580c;
-  border: 1px solid #ea580c;
-  box-shadow: 3px 3px #ea580c;
+  background-position: left bottom;
+  color: #ffffff;
 }
 
 .navbar-contact:hover {
-  background: #ffffff;
   transform: translate(1px, 1px);
   box-shadow: 2px 2px #121212;
 }
 
 .navbar-contact.active-nav-link:hover {
   transform: none;
-  box-shadow: 3px 3px #ea580c;
+  background-position: left bottom;
+  box-shadow: 3px 3px #121212;
   cursor: default;
 }
 
@@ -235,15 +236,26 @@ header nav a:hover::after {
   justify-content: center;
   flex-shrink: 0;
   border-radius: 4px;
-  border: 2px solid #121212;
+  border: 1px solid #121212;
   background: #ffffff;
   text-decoration: none;
   transition: all 0.3s;
+  box-shadow: 3px 3px #121212;
+}
+
+.hero-links:hover {
+  transform: translate(1px, 1px);
+  box-shadow: 2px 2px #121212;
+}
+
+.hero-links:active {
+  box-shadow: none;
+  transform: translate(3px, 3px);
 }
 
 .hero-links svg {
-  width: 32px;
-  height: 32px;
+  width: 40px;
+  height: 40px;
   transition: all 0.3s;
 }
 
@@ -251,13 +263,23 @@ header nav a:hover::after {
   transition: all 0.3s;
 }
 
-.hero-links:hover {
-  background: #121212;
+.hero-links.linkedin:hover {
+  background: #0077b5;
+}
+
+.hero-links.instagram:hover {
+  background: #e1306c;
+}
+
+.hero-links.whatsapp:hover {
+  background: #25d366;
+}
+
+.hero-links.github:hover {
+  background: #333333;
 }
 
 .hero-links:hover svg {
-  width: 40px;
-  height: 40px;
   fill: #ffffff;
 }
 
@@ -266,7 +288,7 @@ header nav a:hover::after {
 }
 
 .hero-links-container .hero-links:first-child:hover svg path {
-  fill: #121212;
+  fill: #0077b5;
 }
 
 /* About */
@@ -367,11 +389,12 @@ h2 {
   border-radius: 8px;
   padding: 28px;
   text-decoration: none;
-  transition: all 0.3s;
+  transition: all 0.3s ease-in-out;
 }
 
 .experience-set:hover {
-  background: #27272a;
+  background: #000;
+  border: 1px solid #ea580c;
 }
 
 .experience-set:active {
@@ -439,7 +462,7 @@ h2 {
 }
 
 .experience-set p {
-  color: #d4d4d8;
+  color: #71717a;
   font-family: "Sora";
   font-style: normal;
   font-weight: 400;
@@ -741,7 +764,7 @@ form button {
   border-radius: 4px;
   padding: 20px;
   border: 2px solid #121212;
-  background: #121212;
+  background: #ea580c;
   align-self: stretch;
   color: #ffffff;
   font-family: "Sora";
@@ -751,11 +774,17 @@ form button {
   line-height: 24px;
   transition: all 0.3s;
   cursor: pointer;
+  box-shadow: 3px 3px #121212;
 }
 
 form button:hover {
-  background: #ffffff;
-  color: #121212;
+  transform: translate(1px, 1px);
+  box-shadow: 2px 2px #121212;
+}
+
+form button:active {
+  box-shadow: none;
+  transform: translate(3px, 3px);
 }
 
 .contact-info {

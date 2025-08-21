@@ -1,7 +1,12 @@
 import React from "react";
+import ClickSound from "/mouse_click_sound.mp3";
 import SocialMedia from "./SocialMedia";
 
 function Contact() {
+  function handleButtonClick() {
+    const clickSound = new Audio(ClickSound);
+    clickSound.play();
+  }
   return (
     <section className="contact" id="Contact">
       <form method="POST">
@@ -10,7 +15,9 @@ function Contact() {
         <input type="tel" name="Phone Number" placeholder="Phone number" />
         <textarea name="Message" placeholder="How can I help?"></textarea>
         <div className="form-buttons">
-          <button type="submit">Get In Touch</button>
+          <button type="submit" onClick={handleButtonClick}>
+            Get In Touch
+          </button>
           <SocialMedia />
         </div>
       </form>

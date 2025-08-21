@@ -1,9 +1,20 @@
 import React from "react";
+import ClickSound from "/mouse_click_sound.mp3";
 
 function SocialMedia() {
+  function handleButtonClick() {
+    const clickSound = new Audio(ClickSound);
+    clickSound.play();
+  }
+
   return (
     <div className="hero-links-container">
-      <a href="#" className="hero-links">
+      <a
+        href="#"
+        target="_blank"
+        className="hero-links linkedin"
+        onClick={handleButtonClick}
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           shapeRendering="geometricPrecision"
@@ -20,7 +31,12 @@ function SocialMedia() {
           />
         </svg>
       </a>
-      <a href="#" className="hero-links">
+      <a
+        href="#"
+        target="_blank"
+        className="hero-links instagram"
+        onClick={handleButtonClick}
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           shapeRendering="geometricPrecision"
@@ -36,7 +52,12 @@ function SocialMedia() {
           />
         </svg>
       </a>
-      <a href="#" className="hero-links">
+      <a
+        href="#"
+        target="_blank"
+        className="hero-links whatsapp"
+        onClick={handleButtonClick}
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           shapeRendering="geometricPrecision"
@@ -52,7 +73,12 @@ function SocialMedia() {
           />
         </svg>
       </a>
-      <a href="#" className="hero-links">
+      <a
+        href="#"
+        target="_blank"
+        className="hero-links github"
+        onClick={handleButtonClick}
+      >
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="64"
