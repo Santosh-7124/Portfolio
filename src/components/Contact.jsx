@@ -10,8 +10,20 @@ function Contact() {
   return (
     <section className="contact" id="Contact">
       <form method="POST">
-        <input type="text" name="Name" placeholder="Your name *" required />
-        <input type="email" name="Email" placeholder="Email *" required />
+        <input
+          type="text"
+          name="Name"
+          placeholder="Your name *"
+          required
+          autoComplete="name"
+        />
+        <input
+          type="email"
+          name="Email"
+          placeholder="Email *"
+          required
+          autoComplete="email"
+        />
         <input type="tel" name="Phone Number" placeholder="Phone number" />
         <textarea name="Message" placeholder="How can I help?"></textarea>
         <div className="form-buttons">

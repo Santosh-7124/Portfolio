@@ -50,6 +50,7 @@ header {
 }
 
 .navbar-home.active-nav-link {
+  -webkit-text-fill-color: #ea580c;
   background-position: right bottom;
 }
 
