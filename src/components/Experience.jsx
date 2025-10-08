@@ -16,10 +16,10 @@ function Experience() {
         >
           <div className="experience-set-heading">
             <div className="experience-set-company">
-              <img src={KoiosStudios} alt="Koios Studios" />
+              <img src={KoiosStudios} alt="Koiostudio" />
               <div className="experience-set-company-info">
                 <h3>Frontend Developer</h3>
-                <h4>Koios Studios</h4>
+                <h4>Koiostudio</h4>
               </div>
             </div>
             <span>May 2024 - Present</span>
@@ -33,7 +33,7 @@ function Experience() {
           </p>
         </a>
         <a
-          href="https://koiosengg.com/"
+          href="https://www.koiosengg.com/"
           target="_blank"
           className="experience-set"
         >
@@ -41,11 +41,11 @@ function Experience() {
             <div className="experience-set-company">
               <img
                 src={KoiosEngineeringSoltuions}
-                alt="Koios Engineering Soltuions"
+                alt="Koios Engineering Soltuion"
               />
               <div className="experience-set-company-info">
                 <h3>Frontend Developer Intern</h3>
-                <h4>Koios Engineering Solutions</h4>
+                <h4>Koios Engineering Solution</h4>
               </div>
             </div>
             <span>May 2024 - Present</span>

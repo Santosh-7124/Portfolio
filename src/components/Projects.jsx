@@ -60,7 +60,7 @@ function Projects() {
           </div>
           <div className="projects-set-info">
             <span>02</span>
-            <h3>Supermarket Admin Panel</h3>
+            <h3>Weather Report</h3>
             <p>
               I'm Evren Shah Lorem Ipsum is simply dummy text of the printing
               and typesetting industry. Lorem Ipsum has been the industry's
