@@ -636,13 +636,13 @@ h2 {
 
 .projects-set-img {
   width: 530px;
-  height: 400px;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  border-radius: 16px;
+  border-radius: 8px;
   flex-shrink: 0;
+  align-self: stretch;
 }
 
 .projects-set-img img {
@@ -657,7 +657,7 @@ h2 {
   align-items: flex-start;
   justify-content: center;
   flex-direction: column;
-  gap: 28px;
+  gap: 20px;
   align-self: stretch;
 }
 

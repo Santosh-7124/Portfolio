@@ -13,18 +13,21 @@ function About() {
         </h2>
         <div className="about-text-para">
           <p>
-            I'm a passionate, self-proclaimed developer who specializes in full
-            stack development (React.js & Node.js). I am very enthusiastic about
-            bringing the technical and visual aspects of digital products to
-            life. User experience, pixel perfect design, and writing clear,
-            readable, highly performant code matters to me.
+            I was studying engineering when I found a strong interest in coding.
+            What began as curiosity soon became passion, and I started learning
+            coding online, exploring how websites and applications are built. As
+            I progressed, I discovered my interest in frontend development and
+            began improving my skills step by step. This led me to my first role
+            as a Frontend Developer, where I learned how to build professional,
+            responsive, and production-ready websites.
           </p>
           <p>
-            I began my journey as a web developer in 2015, and since then, I've
-            continued to grow and evolve as a developer, taking on new
-            challenges and learning
+            Today, I continue to strengthen my frontend skills and stay
+            consistent with learning. I believe growth comes through curiosity,
+            consistency, and building something better each day.
           </p>
         </div>
+
         <a className="resume-download-btn">Download Resume</a>
       </div>
     </section>

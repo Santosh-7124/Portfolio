@@ -25,11 +25,13 @@ function Experience() {
             <span>May 2024 - Present</span>
           </div>
           <p>
-            As a Senior Software Engineer at Google, I played a pivotal role in
-            developing innovative solutions for Google's core search algorithms.
-            Collaborating with a dynamic team of engineers, I contributed to the
-            enhancement of search accuracy and efficiency, optimizing user
-            experiences for millions of users worldwide.
+            As a Frontend Developer at Koios Studio, I have worked on developing
+            and deploying responsive websites for clients such as Akaerswift,
+            Ameya, Balaji Proto Tools, Estate IQ, Fourstor, Happy Gummies, ISK,
+            NE Structures, Talankey, and Urban Sphere. My responsibilities
+            included building user-friendly interfaces, optimizing performance,
+            ensuring cross-device compatibility, and handling complete
+            deployment.
           </p>
         </a>
         <a
@@ -48,14 +50,15 @@ function Experience() {
                 <h4>Koios Engineering Solution</h4>
               </div>
             </div>
-            <span>May 2024 - Present</span>
+            <span>Jan 2024 - Apr 2024</span>
           </div>
           <p>
-            As a Senior Software Engineer at Google, I played a pivotal role in
-            developing innovative solutions for Google's core search algorithms.
-            Collaborating with a dynamic team of engineers, I contributed to the
-            enhancement of search accuracy and efficiency, optimizing user
-            experiences for millions of users worldwide.
+            During my internship at Koios Engineering Solutions, I developed
+            responsive websites for ISK Auto Industries and MR Industries,
+            improving usability and ensuring seamless performance across
+            devices. I also developed and deployed a “Coming Soon” landing page
+            for Greenway Mobility with an engaging UI and SEO-friendly
+            structure.
           </p>
         </a>
       </div>

@@ -1,5 +1,6 @@
 import React from "react";
-import ProjectImg1 from "../assets/Projects/Project Img 1.png";
+import Supermarket from "../assets/Projects/Supermarket.png";
+import Weather from "../assets/Projects/Weather.png";
 
 function Projects() {
   return (
@@ -10,18 +11,19 @@ function Projects() {
       <div className="projects-container">
         <div className="projects-set">
           <div className="projects-set-img">
-            <img src={ProjectImg1} />
+            <img src={Supermarket} alt="Supermarket" />
           </div>
           <div className="projects-set-info">
             <span>01</span>
             <h3>Supermarket Admin Panel</h3>
             <p>
-              I'm Evren Shah Lorem Ipsum is simply dummy text of the printing
-              and typesetting industry. Lorem Ipsum has been the industry's
-              standard dummy text ever since the 1500s, when an unknown printer
-              took a galley of type and scrambled it to specimen book.
+              A MERN-based supermarket management application that allows users
+              to add, update, and delete product items, with all items displayed
+              in an Inventory section. The application uses MongoDB for data
+              storage and retrieval, making product management seamless and
+              organized.
             </p>
-            <a href="#">
+            <a href="https://supermarket-indol.vercel.app/" target="_blank">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"
@@ -56,18 +58,19 @@ function Projects() {
         </div>
         <div className="projects-set">
           <div className="projects-set-img">
-            <img src={ProjectImg1} />
+            <img src={Weather} alt="Weather" />
           </div>
           <div className="projects-set-info">
             <span>02</span>
             <h3>Weather Report</h3>
             <p>
-              I'm Evren Shah Lorem Ipsum is simply dummy text of the printing
-              and typesetting industry. Lorem Ipsum has been the industry's
-              standard dummy text ever since the 1500s, when an unknown printer
-              took a galley of type and scrambled it to specimen book.
+              A weather reporting application that fetches real-time weather
+              data using the OpenWeather API. Users can search for any city and
+              view details such as temperature, humidity, weather conditions,
+              and wind speed. The app is built with a clean UI and provides
+              accurate results for a smooth user experience.
             </p>
-            <a href="#">
+            <a href="https://santosh-7124.github.io/Weather/" target="_blank">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="20"

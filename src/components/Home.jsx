@@ -17,10 +17,10 @@ function Home() {
             Based <strong>in India.</strong>
           </h1>
           <p>
-            I'm M Santosh Lorem Ipsum is simply dummy text of the printing and
-            typesetting industry. Lorem Ipsum has been the industry's standard
-            dummy text ever since the 1500s, when an unknown printer took a
-            galley of type and scrambled it to specimen book.
+            I specialize in developing fast, responsive, and scalable web
+            applications using modern frontend technologies. I’m committed to
+            writing clean code, optimizing performance, and continuously
+            improving my skills to build better products.
           </p>
         </div>
         <SocialMedia />
