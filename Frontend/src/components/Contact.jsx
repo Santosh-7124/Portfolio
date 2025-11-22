@@ -9,12 +9,13 @@ function Contact() {
     phone: "",
     message: "",
   });
+
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    fetch("https://contact-form-qc10.onrender.com")
+    fetch("https://contact-form-qc10.onrender.com/")
       .then(() => console.log("Backend warmed up"))
-      .catch(() => console.log("Backend still sleeping…"));
+      .catch(() => console.log("Backend sleeping…"));
   }, []);
 
   function handleButtonClick() {
@@ -52,14 +53,13 @@ function Contact() {
       if (data.ok) {
         setLoading("sent");
         setForm({ name: "", email: "", phone: "", message: "" });
-        setTimeout(() => {
-          setLoading(false);
-        }, 2000);
+
+        setTimeout(() => setLoading(false), 2000);
       } else {
         setLoading(false);
       }
     } catch (err) {
-      console.error(err);
+      console.error("Frontend error:", err);
       setLoading(false);
     }
   };
@@ -76,6 +76,7 @@ function Contact() {
           value={form.name}
           onChange={handleChange}
         />
+
         <input
           type="email"
           name="email"
@@ -85,6 +86,7 @@ function Contact() {
           value={form.email}
           onChange={handleChange}
         />
+
         <input
           type="tel"
           name="phone"
@@ -92,12 +94,14 @@ function Contact() {
           value={form.phone}
           onChange={handleChange}
         />
+
         <textarea
           name="message"
           placeholder="How can I help?"
           value={form.message}
           onChange={handleChange}
         />
+
         <div className="form-buttons">
           <button type="submit" disabled={loading}>
             {loading === "sent"
@@ -109,6 +113,7 @@ function Contact() {
           <SocialMedia />
         </div>
       </form>
+
       <div className="contact-info">
         <div className="contact-info-heading">
           <h2>
@@ -119,6 +124,7 @@ function Contact() {
             user-friendly, and memorable interactive experiences.
           </p>
         </div>
+
         <div className="contact-info-heading">
           <a
             href="https://mail.google.com/mail/?view=cm&to=sunny962002@gmail.com"

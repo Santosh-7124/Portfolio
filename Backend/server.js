@@ -1,66 +1,55 @@
 require("dotenv").config();
 const express = require("express");
-const nodemailer = require("nodemailer");
 const cors = require("cors");
+const { Resend } = require("resend");
 
 const app = express();
-const PORT = process.env.PORT || 10000;
+const PORT = process.env.PORT || 5000;
 
+// Middleware
+app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// FIX CORS
-app.use(
-    cors({
-        origin: "*",
-        methods: ["GET", "POST"],
-        allowedHeaders: ["Content-Type"],
-    })
-);
+// Resend setup
+const resend = new Resend(process.env.RESEND_API_KEY);
 
-// Test route
+// Warm-up route
 app.get("/", (req, res) => {
     res.send("Backend is running");
 });
 
-// Gmail Transporter
-const transporter = nodemailer.createTransport({
-    host: "smtp.gmail.com",
-    port: 465,
-    secure: true,
-    auth: {
-        user: process.env.SMTP_USER,
-        pass: process.env.SMTP_PASS,
-    },
-});
-
-
+// Contact API
 app.post("/api/contact", async (req, res) => {
+    const { name, email, phone, message } = req.body;
+
+    if (!name || !email || !message) {
+        return res.status(400).json({ ok: false, error: "Missing fields" });
+    }
+
     try {
-        const { name, email, phone, message } = req.body;
-
-        if (!name || !email || !message) {
-            return res.status(400).json({ ok: false, error: "Missing fields" });
-        }
-
-        await transporter.sendMail({
-            from: process.env.SMTP_USER,
+        const data = await resend.emails.send({
+            from: "Portfolio Contact <onboarding@resend.dev>",
             to: process.env.TO_EMAIL,
-            subject: `New Contact Form Submission: ${name}`,
-            text: `
-Name: ${name}
-Email: ${email}
-Phone: ${phone}
-Message:
-${message}
+            subject: `New Contact Form Message from ${name}`,
+            html: `
+        <h2>New Contact Form Submission</h2>
+        <p><strong>Name:</strong> ${name}</p>
+        <p><strong>Email:</strong> ${email}</p>
+        <p><strong>Phone:</strong> ${phone || "Not provided"}</p>
+        <p><strong>Message:</strong><br/>${message}</p>
       `,
         });
 
-        res.json({ ok: true });
-    } catch (err) {
-        console.log("Email Error:", err);
-        res.status(500).json({ ok: false, error: err.message });
+        console.log("Email Sent:", data);
+        res.json({ ok: true, message: "Email sent successfully" });
+    } catch (error) {
+        console.error("Resend Email Error:", error);
+        res.status(500).json({ ok: false, error: "Email failed to send" });
     }
 });
 
-app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+// Start server
+app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
+});
