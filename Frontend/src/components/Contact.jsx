@@ -12,7 +12,7 @@ function Contact() {
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {
-    fetch("https://your-backend-url.com")
+    fetch("https://contact-form-qc10.onrender.com")
       .then(() => console.log("Backend warmed up"))
       .catch(() => console.log("Backend still sleeping…"));
   }, []);
